@@ -85,7 +85,7 @@ def main():
     q1_selected = np.nanmean(q1_selected, axis=(1, 2))
     
     # Selecting time indices where q1_selected is greater than mean + 2*std
-    time_sel = dims["time"][np.where(q1_selected > q1_selected.mean() + 2 * q1_selected.std())].values
+    time_sel = dims["time"][np.where(q1_selected > q1_selected.mean() + 1 * q1_selected.std())].values
 
     # Creating an xarray Dataset with time as a coordinate
     ds = xr.Dataset(
