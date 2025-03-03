@@ -1,0 +1,193 @@
+nohup: ignoring input
+Error: File path '/work/DATA/Satellite/CloudSat/2006/001/' does not exist.
+Error: File path '/work/DATA/Satellite/CloudSat/2006/002/' does not exist.
+Error: File path '/work/DATA/Satellite/CloudSat/2006/003/' does not exist.
+Error: File path '/work/DATA/Satellite/CloudSat/2006/004/' does not exist.
+Error: File path '/work/DATA/Satellite/CloudSat/2006/005/' does not exist.
+Error: File path '/work/DATA/Satellite/CloudSat/2006/006/' does not exist.
+Error: File path '/work/DATA/Satellite/CloudSat/2006/007/' does not exist.
+Error: File path '/work/DATA/Satellite/CloudSat/2006/008/' does not exist.
+Error: File path '/work/DATA/Satellite/CloudSat/2006/009/' does not exist.
+Error: File path '/work/DATA/Satellite/CloudSat/2006/010/' does not exist.
+Error: File path '/work/DATA/Satellite/CloudSat/2006/011/' does not exist.
+Error: File path '/work/DATA/Satellite/CloudSat/2006/012/' does not exist.
+Error: File path '/work/DATA/Satellite/CloudSat/2006/013/' does not exist.
+Error: File path '/work/DATA/Satellite/CloudSat/2006/014/' does not exist.
+Error: File path '/work/DATA/Satellite/CloudSat/2006/015/' does not exist.
+Error: File path '/work/DATA/Satellite/CloudSat/2006/016/' does not exist.
+Error: File path '/work/DATA/Satellite/CloudSat/2006/017/' does not exist.
+Error: File path '/work/DATA/Satellite/CloudSat/2006/018/' does not exist.
+Error: File path '/work/DATA/Satellite/CloudSat/2006/019/' does not exist.
+Error: File path '/work/DATA/Satellite/CloudSat/2006/020/' does not exist.
+Error: File path '/work/DATA/Satellite/CloudSat/2006/021/' does not exist.
+Error: File path '/work/DATA/Satellite/CloudSat/2006/022/' does not exist.
+Error: File path '/work/DATA/Satellite/CloudSat/2006/023/' does not exist.
+Error: File path '/work/DATA/Satellite/CloudSat/2006/024/' does not exist.
+Error: File path '/work/DATA/Satellite/CloudSat/2006/025/' does not exist.
+Error: File path '/work/DATA/Satellite/CloudSat/2006/026/' does not exist.
+Error: File path '/work/DATA/Satellite/CloudSat/2006/027/' does not exist.
+Error: File path '/work/DATA/Satellite/CloudSat/2006/028/' does not exist.
+Error: File path '/work/DATA/Satellite/CloudSat/2006/029/' does not exist.
+Error: File path '/work/DATA/Satellite/CloudSat/2006/030/' does not exist.
+Error: File path '/work/DATA/Satellite/CloudSat/2006/031/' does not exist.
+Error: File path '/work/DATA/Satellite/CloudSat/2006/032/' does not exist.
+Error: File path '/work/DATA/Satellite/CloudSat/2006/033/' does not exist.
+Error: File path '/work/DATA/Satellite/CloudSat/2006/034/' does not exist.
+Error: File path '/work/DATA/Satellite/CloudSat/2006/035/' does not exist.
+Error: File path '/work/DATA/Satellite/CloudSat/2006/036/' does not exist.
+Error: File path '/work/DATA/Satellite/CloudSat/2006/037/' does not exist.
+Error: File path '/work/DATA/Satellite/CloudSat/2006/038/' does not exist.
+Error: File path '/work/DATA/Satellite/CloudSat/2006/039/' does not exist.
+Error: File path '/work/DATA/Satellite/CloudSat/2006/040/' does not exist.
+Error: File path '/work/DATA/Satellite/CloudSat/2006/041/' does not exist.
+Error: File path '/work/DATA/Satellite/CloudSat/2006/042/' does not exist.
+Error: File path '/work/DATA/Satellite/CloudSat/2006/043/' does not exist.
+Error: File path '/work/DATA/Satellite/CloudSat/2006/044/' does not exist.
+Error: File path '/work/DATA/Satellite/CloudSat/2006/045/' does not exist.
+Error: File path '/work/DATA/Satellite/CloudSat/2006/046/' does not exist.
+Error: File path '/work/DATA/Satellite/CloudSat/2006/047/' does not exist.
+Error: File path '/work/DATA/Satellite/CloudSat/2006/048/' does not exist.
+Error: File path '/work/DATA/Satellite/CloudSat/2006/049/' does not exist.
+Error: File path '/work/DATA/Satellite/CloudSat/2006/050/' does not exist.
+Error: File path '/work/DATA/Satellite/CloudSat/2006/051/' does not exist.
+Error: File path '/work/DATA/Satellite/CloudSat/2006/052/' does not exist.
+Error: File path '/work/DATA/Satellite/CloudSat/2006/053/' does not exist.
+Error: File path '/work/DATA/Satellite/CloudSat/2006/054/' does not exist.
+Error: File path '/work/DATA/Satellite/CloudSat/2006/055/' does not exist.
+Error: File path '/work/DATA/Satellite/CloudSat/2006/056/' does not exist.
+Error: File path '/work/DATA/Satellite/CloudSat/2006/057/' does not exist.
+Error: File path '/work/DATA/Satellite/CloudSat/2006/058/' does not exist.
+Error: File path '/work/DATA/Satellite/CloudSat/2006/059/' does not exist.
+Error: File path '/work/DATA/Satellite/CloudSat/2006/060/' does not exist.
+Error: File path '/work/DATA/Satellite/CloudSat/2006/061/' does not exist.
+Error: File path '/work/DATA/Satellite/CloudSat/2006/062/' does not exist.
+Error: File path '/work/DATA/Satellite/CloudSat/2006/063/' does not exist.
+Error: File path '/work/DATA/Satellite/CloudSat/2006/064/' does not exist.
+Error: File path '/work/DATA/Satellite/CloudSat/2006/065/' does not exist.
+Error: File path '/work/DATA/Satellite/CloudSat/2006/066/' does not exist.
+Error: File path '/work/DATA/Satellite/CloudSat/2006/067/' does not exist.
+Error: File path '/work/DATA/Satellite/CloudSat/2006/068/' does not exist.
+Error: File path '/work/DATA/Satellite/CloudSat/2006/069/' does not exist.
+Error: File path '/work/DATA/Satellite/CloudSat/2006/070/' does not exist.
+Error: File path '/work/DATA/Satellite/CloudSat/2006/071/' does not exist.
+Error: File path '/work/DATA/Satellite/CloudSat/2006/072/' does not exist.
+Error: File path '/work/DATA/Satellite/CloudSat/2006/073/' does not exist.
+Error: File path '/work/DATA/Satellite/CloudSat/2006/074/' does not exist.
+Error: File path '/work/DATA/Satellite/CloudSat/2006/075/' does not exist.
+Error: File path '/work/DATA/Satellite/CloudSat/2006/076/' does not exist.
+Error: File path '/work/DATA/Satellite/CloudSat/2006/077/' does not exist.
+Error: File path '/work/DATA/Satellite/CloudSat/2006/078/' does not exist.
+Error: File path '/work/DATA/Satellite/CloudSat/2006/079/' does not exist.
+Error: File path '/work/DATA/Satellite/CloudSat/2006/080/' does not exist.
+Error: File path '/work/DATA/Satellite/CloudSat/2006/081/' does not exist.
+Error: File path '/work/DATA/Satellite/CloudSat/2006/082/' does not exist.
+Error: File path '/work/DATA/Satellite/CloudSat/2006/083/' does not exist.
+Error: File path '/work/DATA/Satellite/CloudSat/2006/084/' does not exist.
+Error: File path '/work/DATA/Satellite/CloudSat/2006/085/' does not exist.
+Error: File path '/work/DATA/Satellite/CloudSat/2006/086/' does not exist.
+Error: File path '/work/DATA/Satellite/CloudSat/2006/087/' does not exist.
+Error: File path '/work/DATA/Satellite/CloudSat/2006/088/' does not exist.
+Error: File path '/work/DATA/Satellite/CloudSat/2006/089/' does not exist.
+Error: File path '/work/DATA/Satellite/CloudSat/2006/090/' does not exist.
+Error: File path '/work/DATA/Satellite/CloudSat/2006/091/' does not exist.
+Error: File path '/work/DATA/Satellite/CloudSat/2006/092/' does not exist.
+Error: File path '/work/DATA/Satellite/CloudSat/2006/093/' does not exist.
+Error: File path '/work/DATA/Satellite/CloudSat/2006/094/' does not exist.
+Error: File path '/work/DATA/Satellite/CloudSat/2006/095/' does not exist.
+Error: File path '/work/DATA/Satellite/CloudSat/2006/096/' does not exist.
+Error: File path '/work/DATA/Satellite/CloudSat/2006/097/' does not exist.
+Error: File path '/work/DATA/Satellite/CloudSat/2006/098/' does not exist.
+Error: File path '/work/DATA/Satellite/CloudSat/2006/099/' does not exist.
+Error: File path '/work/DATA/Satellite/CloudSat/2006/100/' does not exist.
+Error: File path '/work/DATA/Satellite/CloudSat/2006/101/' does not exist.
+Error: File path '/work/DATA/Satellite/CloudSat/2006/102/' does not exist.
+Error: File path '/work/DATA/Satellite/CloudSat/2006/103/' does not exist.
+Error: File path '/work/DATA/Satellite/CloudSat/2006/104/' does not exist.
+Error: File path '/work/DATA/Satellite/CloudSat/2006/105/' does not exist.
+Error: File path '/work/DATA/Satellite/CloudSat/2006/106/' does not exist.
+Error: File path '/work/DATA/Satellite/CloudSat/2006/107/' does not exist.
+Error: File path '/work/DATA/Satellite/CloudSat/2006/108/' does not exist.
+Error: File path '/work/DATA/Satellite/CloudSat/2006/109/' does not exist.
+Error: File path '/work/DATA/Satellite/CloudSat/2006/110/' does not exist.
+Error: File path '/work/DATA/Satellite/CloudSat/2006/111/' does not exist.
+Error: File path '/work/DATA/Satellite/CloudSat/2006/112/' does not exist.
+Error: File path '/work/DATA/Satellite/CloudSat/2006/113/' does not exist.
+Error: File path '/work/DATA/Satellite/CloudSat/2006/114/' does not exist.
+Error: File path '/work/DATA/Satellite/CloudSat/2006/115/' does not exist.
+Error: File path '/work/DATA/Satellite/CloudSat/2006/116/' does not exist.
+Error: File path '/work/DATA/Satellite/CloudSat/2006/117/' does not exist.
+Error: File path '/work/DATA/Satellite/CloudSat/2006/118/' does not exist.
+Error: File path '/work/DATA/Satellite/CloudSat/2006/119/' does not exist.
+Error: File path '/work/DATA/Satellite/CloudSat/2006/120/' does not exist.
+Error: File path '/work/DATA/Satellite/CloudSat/2006/121/' does not exist.
+Error: File path '/work/DATA/Satellite/CloudSat/2006/122/' does not exist.
+Error: File path '/work/DATA/Satellite/CloudSat/2006/123/' does not exist.
+Error: File path '/work/DATA/Satellite/CloudSat/2006/124/' does not exist.
+Error: File path '/work/DATA/Satellite/CloudSat/2006/125/' does not exist.
+Error: File path '/work/DATA/Satellite/CloudSat/2006/126/' does not exist.
+Error: File path '/work/DATA/Satellite/CloudSat/2006/127/' does not exist.
+Error: File path '/work/DATA/Satellite/CloudSat/2006/128/' does not exist.
+Error: File path '/work/DATA/Satellite/CloudSat/2006/129/' does not exist.
+Error: File path '/work/DATA/Satellite/CloudSat/2006/130/' does not exist.
+Error: File path '/work/DATA/Satellite/CloudSat/2006/131/' does not exist.
+Error: File path '/work/DATA/Satellite/CloudSat/2006/132/' does not exist.
+Error: File path '/work/DATA/Satellite/CloudSat/2006/133/' does not exist.
+Error: File path '/work/DATA/Satellite/CloudSat/2006/134/' does not exist.
+Error: File path '/work/DATA/Satellite/CloudSat/2006/135/' does not exist.
+Error: File path '/work/DATA/Satellite/CloudSat/2006/136/' does not exist.
+Error: File path '/work/DATA/Satellite/CloudSat/2006/137/' does not exist.
+Error: File path '/work/DATA/Satellite/CloudSat/2006/138/' does not exist.
+Error: File path '/work/DATA/Satellite/CloudSat/2006/139/' does not exist.
+Error: File path '/work/DATA/Satellite/CloudSat/2006/140/' does not exist.
+Error: File path '/work/DATA/Satellite/CloudSat/2006/141/' does not exist.
+Error: File path '/work/DATA/Satellite/CloudSat/2006/142/' does not exist.
+Error: File path '/work/DATA/Satellite/CloudSat/2006/143/' does not exist.
+Error: File path '/work/DATA/Satellite/CloudSat/2006/144/' does not exist.
+Error: File path '/work/DATA/Satellite/CloudSat/2006/145/' does not exist.
+Error: File path '/work/DATA/Satellite/CloudSat/2006/146/' does not exist.
+Error: File path '/work/DATA/Satellite/CloudSat/2006/147/' does not exist.
+Error: File path '/work/DATA/Satellite/CloudSat/2006/148/' does not exist.
+Error: File path '/work/DATA/Satellite/CloudSat/2006/149/' does not exist.
+Error: File path '/work/DATA/Satellite/CloudSat/2006/150/' does not exist.
+Error: File path '/work/DATA/Satellite/CloudSat/2006/151/' does not exist.
+Error: File path '/work/DATA/Satellite/CloudSat/2006/152/' does not exist.
+Error: File path '/work/DATA/Satellite/CloudSat/2006/153/' does not exist.
+Error: File path '/work/DATA/Satellite/CloudSat/2006/154/' does not exist.
+Error: File path '/work/DATA/Satellite/CloudSat/2006/155/' does not exist.
+Error: File path '/work/DATA/Satellite/CloudSat/2006/156/' does not exist.
+Error: File path '/work/DATA/Satellite/CloudSat/2006/157/' does not exist.
+Error: File path '/work/DATA/Satellite/CloudSat/2006/158/' does not exist.
+Error: File path '/work/DATA/Satellite/CloudSat/2006/159/' does not exist.
+Error: File path '/work/DATA/Satellite/CloudSat/2006/160/' does not exist.
+Error: File path '/work/DATA/Satellite/CloudSat/2006/161/' does not exist.
+Error: File path '/work/DATA/Satellite/CloudSat/2006/162/' does not exist.
+(8, 360, 576)
+2006-163 done
+(8, 360, 576)
+2006-164 done
+(8, 360, 576)
+2006-165 done
+(8, 360, 576)
+2006-166 done
+Error: File path '/work/DATA/Satellite/CloudSat/2006/167/' does not exist.
+Error: File path '/work/DATA/Satellite/CloudSat/2006/168/' does not exist.
+Error: File path '/work/DATA/Satellite/CloudSat/2006/169/' does not exist.
+(8, 360, 576)
+2006-170 done
+(8, 360, 576)
+2006-171 done
+(8, 360, 576)
+2006-172 done
+Traceback (most recent call last):
+  File "/home/b11209013/2025_Research/CloudSat/CloudSat_Process/Cloudsat_grid.py", line 278, in <module>
+    main()
+  File "/home/b11209013/2025_Research/CloudSat/CloudSat_Process/Cloudsat_grid.py", line 203, in main
+    concat_dict[key].append(read_file[i][key][:, concat_dict["hgt"][0].shape[1]])
+                            ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+IndexError: too many indices for array: array is 1-dimensional, but 2 were indexed
+(8, 360, 576)
+2006-174 done
+/home/b11209013/miniconda3/envs/atmo/lib/python3.11/site-packages/joblib/externals/loky/backend/resource_tracker.py:314: UserWarning: resource_tracker: There appear to be 70 leaked semlock objects to clean up at shutdown
+  warnings.warn(
+/home/b11209013/miniconda3/envs/atmo/lib/python3.11/site-packages/joblib/externals/loky/backend/resource_tracker.py:314: UserWarning: resource_tracker: There appear to be 1 leaked folder objects to clean up at shutdown
+  warnings.warn(

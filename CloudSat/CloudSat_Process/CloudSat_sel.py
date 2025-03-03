@@ -17,7 +17,6 @@ from scipy.interpolate import interp1d
 import pandas as pd
 #year = int(sys.argv[1])
 #date = int(sys.argv[2])
-
 def check_file_exists(filepath):
     if not os.path.exists(filepath):
         print(f"Error: File path '{filepath}' does not exist.")
