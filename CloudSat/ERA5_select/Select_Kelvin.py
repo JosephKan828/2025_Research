@@ -3,6 +3,7 @@
 import sys
 import numpy as np
 import xarray as xr
+from datetime import datetime
 from pandas import date_range
 import matplotlib.pyplot as plt
 
@@ -47,6 +48,23 @@ def ifft2(data):
     ifft = np.fft.fft(ifft, axis=2) / data.shape[2]
     return ifft
 
+# Compute time differece
+def time_diff(t):
+    ref_time = datetime(1900, 1, 1, 0, 0, 0)
+    
+    # Parse the input timestamp
+    # Use fromisoformat() to handle ISO 8601 format timestamps
+    
+    # Compute time difference
+    timestamp = datetime.fromisoformat(str(t).replace("T", " "))
+    
+    time_difference = timestamp - ref_time
+    
+    # Convert to hours
+    hours_difference = time_difference.total_seconds() / 3600
+    
+    return hours_difference
+    
 def main():
     dims, q1 = load_data()
 
@@ -86,6 +104,13 @@ def main():
     
     # Selecting time indices where q1_selected is greater than mean + 2*std
     time_sel = dims["time"][np.where(q1_selected > q1_selected.mean() + 1 * q1_selected.std())].values
+
+    print(time_sel)
+
+    # Convert to ISO 8601 format
+    time_sel = [time_diff(t) for t in time_sel]
+
+    print(time_sel)
 
     # Creating an xarray Dataset with time as a coordinate
     ds = xr.Dataset(

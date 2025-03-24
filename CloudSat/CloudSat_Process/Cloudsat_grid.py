@@ -125,60 +125,6 @@ def main():
     path = f"/work/DATA/Satellite/CloudSat/{year}/{date:03d}/"
 
     if not os.path.exists(path):
-        with Dataset(f"/work/b11209013/2024_Research/CloudSat/CloudSat_Interp/CloudSat_Interpolated_{year:04d}_{date:03d}.nc", "w") as f:
-            # Add global attributes that CDO uses for metadata
-            f.title = f"CloudSat CDO Data for {year}-{date}"
-            f.institution = "NTUAS"
-            f.source = "CloudSat"
-            f.history = f"Created on {datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')}"
-            f.conventions = "CF-1.8"  # Climate and Forecast conventions
-            f.createDimension("time", None)
-            f.createDimension("lev", len(dims["lev"]))
-            f.createDimension("lat", len(dims["lat"]))
-            f.createDimension("lon", len(dims["lon"]))
-            # Create coordinate variables with attributes
-            time_var = f.createVariable("time", np.float64, ("time",))
-            time_var.units = "hours since 1900-01-01 00:00:00"  # Standard time units
-            time_var.calendar = "standard"
-            time_var.standard_name = "time"
-            time_var.long_name = "time"
-            time_var.axis = "T"
-            lev_var = f.createVariable("lev", np.float32, ("lev",))
-            lev_var.units = "hPa"  # Assuming pressure levels
-            lev_var.standard_name = "air_pressure"
-            lev_var.long_name = "pressure level"
-            lev_var.axis = "Z"
-            lev_var.positive = "down"  # For pressure levels
-            lat_var = f.createVariable("lat", np.float32, ("lat",))
-            lat_var.units = "degrees_north"
-            lat_var.standard_name = "latitude"
-            lat_var.long_name = "latitude"
-            lat_var.axis = "Y"
-            lon_var = f.createVariable("lon", np.float32, ("lon",))
-            lon_var.units = "degrees_east"
-            lon_var.standard_name = "longitude"
-            lon_var.long_name = "longitude"
-            lon_var.axis = "X"
-            # Assign coordinate values
-            f.variables["time"][:] = dims["time"][int(date-1)]
-            f.variables["lev"][:] = dims["lev"]
-            f.variables["lat"][:] = dims["lat"]
-            f.variables["lon"][:] = dims["lon"]
-            # Create data variables with attributes
-            qlw = f.createVariable("qlw", np.float32, ("time", "lev", "lat", "lon"), 
-                                zlib=True, complevel=4)  # Compression for efficiency
-            qlw.units = "K/day"
-            qlw.standard_name = "tendency_of_air_temperature_due_to_longwave_heating"
-            qlw.long_name = "Longwave Heating Rate"
-            qlw[:, :, :, :] = np.full_like(z[None, :], np.nan, dtype=np.float32)  # More concise
-            
-            qsw = f.createVariable("qsw", np.float32, ("time", "lev", "lat", "lon"),
-                                zlib=True, complevel=4)
-            qsw.units = "K/day"
-            qsw.standard_name = "tendency_of_air_temperature_due_to_shortwave_heating"
-            qsw.long_name = "Shortwave Heating Rate"
-            qsw[:, :, :, :] = np.full_like(z[None, :], np.nan, dtype=np.float32)  # More concise
-
         print(f"{year}_{date:03d} is empty")
         sys.exit(1)
 

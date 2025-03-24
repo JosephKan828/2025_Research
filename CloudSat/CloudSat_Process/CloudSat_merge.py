@@ -1,83 +1,63 @@
-# This program is to merge CloudSat data
-# Import packages
-import sys
-import glob
+# This program is to merge CloudSat data into a single NetCDF file
+# import package
+import xarray as xr
 import numpy as np
 import pandas as pd
-import xarray as xr
-import netCDF4 as nc
-from datetime import datetime
+import os
+import re
 
-# Compute time difference
-def time_itv_vectorized(time_array):
-    base_time = np.datetime64("1900-01-01T00:00:00")
-    return (time_array.astype("datetime64[s]") - base_time).astype("timedelta64[h]").astype(np.float32)
-
-def process_CS_for_CDO(input, output):
-    with xr.open_dataset(input, engine="netcdf4") as f:
-        lat = f.latitude.values.astype(np.float32)
-        lon = f.longitude.values.astype(np.float32)
-        lev = f.pressure_level.values.astype(np.float32)
-        time = f.time.values  # Keep raw format for fast conversion
-        qlw = f.qlw.load().astype(np.float32)
-        qsw = f.qsw.load().astype(np.float32)
-        
-    # Convert time
-    time_itv_sec = time_itv_vectorized(time)
-    
-    # Create output file
-    with nc.Dataset(output, "w", format="NETCDF4") as f:
-        # Define dimensions
-        f.createDimension("time", len(time_itv_sec))
-        f.createDimension("lev", len(lev))
-        f.createDimension("lat", len(lat))
-        f.createDimension("lon", len(lon))
-
-        # Create variables with compression
-        f.createVariable("time", "f4", ("time",), zlib=True)
-        f.createVariable("lev", "f4", ("lev",), zlib=True)
-        f.createVariable("lat", "f4", ("lat",), zlib=True)
-        f.createVariable("lon", "f4", ("lon",), zlib=True)
-        f.createVariable("qlw", "f4", ("time", "lev", "lat", "lon"), zlib=True, chunksizes=(1, len(lev), len(lat), len(lon)))
-        f.createVariable("qsw", "f4", ("time", "lev", "lat", "lon"), zlib=True, chunksizes=(1, len(lev), len(lat), len(lon)))
-
-        # Assign values
-        f.variables["time"][:] = time_itv_sec
-        f.variables["lev"][:] = lev
-        f.variables["lat"][:] = lat
-        f.variables["lon"][:] = lon
-        f.variables["qlw"][:] = qlw
-        f.variables["qsw"][:] = qsw
-
-        # Add attributes for CDO compatibility
-        f.variables["time"].units = "hours since 1900-01-01 00:00:00"
-        f.variables["time"].calendar = "gregorian"
-        f.variables["time"].long_name = "time"
-
-        f.variables["lev"].long_name = "pressure_level"
-        f.variables["lev"].units = "hPa"
-
-        f.variables["lat"].long_name = "latitude"
-        f.variables["lat"].units = "degrees_north"
-
-        f.variables["lon"].long_name = "longitude"
-        f.variables["lon"].units = "degrees_east"
-
-        f.variables["qlw"].long_name = "Longwave heating rate"
-        f.variables["qlw"].units = "K/day"
-
-        f.variables["qsw"].long_name = "Shortwave heating rate"
-        f.variables["qsw"].units = "K/day"
-
-    print(f"Processed file saved: {output}")
-    
 def main():
-    file_list = glob.glob("/work/b11209013/2024_Research/CloudSat/interpolated_output_*.nc")
-    
-    for f in file_list:
-        output_file = f.replace("interpolated_output_", "CloudSat_CDO_")
+    path = "/work/b11209013/2024_Research/CloudSat/CloudSat_Interp/"
 
-        process_CS_for_CDO(f, output_file)
+    name_pat = r"CloudSat_Interpolated_(\d{4})_(\d{3})\.nc"
+
+    files = [f for f in os.listdir(path) if re.match(name_pat, f)]
+
+    # Extract dates from filenames
+    dates_available = []
+    datasets = {}
+
+    for file in files:
+        match = re.match(name_pat, file)
+        if match:
+            year = int(match.group(1))
+            day_of_year = int(match.group(2))
+            date = pd.to_datetime(f"{year}-{day_of_year}", format="%Y-%j")  # Convert to datetime
+            dates_available.append(date)
+
+            try:
+                datasets[date] = xr.open_dataset(os.path.join(path, file), engine="netcdf4")
+            except OSError:
+                continue
+
+    # Generate a complete date range
+    date_range = pd.date_range(start=min(dates_available), end=max(dates_available), freq="D")
+
+    # Merge datasets, inserting NaN where data is missing
+    merged_datasets = []
+    for date in date_range:
+        if date in datasets:
+            merged_datasets.append(datasets[date])
+        else:
+            # Create an empty dataset with NaN values, matching existing dimensions
+            empty_ds = datasets[next(iter(datasets))].copy(deep=True)  # Copy structure
+            for var in empty_ds.data_vars:
+                empty_ds[var].values[:] = np.nan  # Set all values to NaN
+            merged_datasets.append(empty_ds)
+
+    # Concatenate along time dimension
+    merged_ds = xr.concat(merged_datasets, dim="time")
+
+    # Save the merged dataset to a new NetCDF file
+    merged_ds.to_netcdf("/work/b11209013/2024_Research/CloudSat/Merged_CloudSat_Interpolated.nc")
+
+    print("Merging completed. Missing dates filled with NaN.")
+
+    with xr.open_dataset("/work/b11209013/2024_Research/CloudSat/Merged_CloudSat_Interpolated.nc", engine="netcdf4") as f:
+        print(f"Dimensions: {f.dims}")
+        print(f"Variables: {f.variables.keys()}")
+        print(date_range.shape)
+        print(f.time.shape)
+
 if __name__ == "__main__":
-    
     main()
